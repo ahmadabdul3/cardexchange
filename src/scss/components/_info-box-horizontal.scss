@@ -1,0 +1,135 @@
+.info-box.horizontal {
+
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 0 5px -1px;
+    width: 800px;
+    padding: 30px 0;
+    margin: 10px auto;
+
+    .content {
+
+        width: 99%;
+        margin: 0 auto;
+        text-align: center;
+
+        .image-box {
+            display: inline-block;
+            vertical-align: top;
+            width: 32%;
+
+            .content {
+                width: 90%;
+                margin: 0 auto;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+        }
+        article {
+            display: inline-block;
+            vertical-align: top;
+            width: 64%;
+
+            .content {
+                width: 90%;
+                margin: 0 auto;
+
+                header {
+                    h4 {
+                        text-align: left;
+                        padding: 0 0 5px 0;
+                        margin: 0 0 5px 0;
+                        font-size: 16px;
+                        font-weight: 100;
+                        border-bottom: 1px solid $green;
+                    }
+                }
+
+                p {
+                    text-align: left;
+                    font-size: 14px;
+                    padding: 5px 0;
+                }
+            }
+        }
+
+    }
+
+
+}
+
+@media(min-width: 450px) and (max-width: 850px) {
+    .info-box.horizontal {
+        width: 95%;
+    }
+}
+@media(min-width: 0px) and (max-width: 449px) {
+    .info-box.horizontal {
+        width: 95%;
+
+        .content {
+
+            width: 95%;
+
+            .image-box {
+                width: 100%;
+
+                .content {
+                    width: 95%;
+
+                    img {
+                    }
+                }
+
+            }
+            article {
+                width: 100%;
+
+                .content {
+                    width: 95%;
+
+                    header {
+                        h4 {
+
+                            margin-top: 10px;
+                        }
+                    }
+
+                    p {
+                        
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+
+/*
+
+<div class='info-box horizontal'>
+    <div class='content'>
+
+        <div class='image-box'>
+            <div class='content'>
+                <img src=''/>
+            </div>
+        </div>
+
+        <article>
+            <div class='content'>
+                <p>
+                </p>
+            </div>
+        </article>
+    </div>
+</div>
+
+*/
+

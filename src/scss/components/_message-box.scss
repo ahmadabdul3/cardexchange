@@ -1,0 +1,54 @@
+
+
+.message-box {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 200px;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px -2px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: $dark-gray-1;
+
+
+    h4 {
+        padding: 0;
+        margin: 0 0 10px 0;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    p {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+}
+.message-box.blue {
+    background-color: $light-blue-3;
+    border-color: $light-blue-2;
+    color: $dark-blue-2;
+}
+
+.message-box.orange {
+    background-color: $light-orange-4;
+    border-color: $light-orange-3;
+    color: $dark-orange-2;
+}
+
+.message-box.red {
+    background-color: $light-red-3;
+    border-color: $light-red-2;
+    color: $dark-red-2;
+}
+
+.message-box.green {
+    background-color: $light-green-3;
+    border-color: $light-green-2;
+    color: $dark-green-2;
+}
+
+.message-box.gray {
+    background-color: $dark-gray-1;
+    border-color: $dark-gray-2;
+    color: #eee;
+}
