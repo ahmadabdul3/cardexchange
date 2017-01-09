@@ -1,0 +1,26 @@
+.card.greeting {
+  text-align: center;
+
+  .image-box,
+  .text-box {
+    padding: 10px 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .image-box {
+    width: 80px;
+
+    img {
+      display: inline-block;
+      width: 60px;
+      border-radius: 100%;
+    }
+  }
+
+  .text-box {
+    width: calc(100% - 90px);
+    text-align: left;
+    font-size: 25px;
+  }
+}
