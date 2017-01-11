@@ -13,6 +13,12 @@ body {
 .site-purple-text {
   color: #A700D1; }
 
+.site-purple-light-text {
+  color: #C94FE8; }
+
+.site-green-text {
+  color: #00C1C4; }
+
 .shadow {
   position: absolute;
   top: 0;
@@ -179,7 +185,7 @@ nav.top {
 .card {
   position: relative;
   background-color: white;
-  margin: 10px 0;
+  margin: 10px auto;
   min-height: 40px; }
   .card:first-of-type {
     margin-top: 0; }

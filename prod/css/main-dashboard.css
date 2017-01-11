@@ -1,30 +1,64 @@
 .card.greeting {
-  text-align: center; }
+  text-align: center;
+  background-color: transparent; }
   .card.greeting .image-box,
   .card.greeting .text-box {
     padding: 10px 0;
     display: inline-block;
     vertical-align: middle; }
   .card.greeting .image-box {
-    width: 80px; }
+    width: 30%; }
     .card.greeting .image-box img {
       display: inline-block;
       width: 60px;
       border-radius: 100%; }
   .card.greeting .text-box {
-    width: calc(100% - 90px);
+    width: 65%;
     text-align: left;
     font-size: 25px; }
 
-.card.notification {
-  text-align: center; }
-  .card.notification .title {
-    padding: 10px 0; }
-  .card.notification .time,
-  .card.notification .media {
+.card.appointment-reminder {
+  padding-bottom: 15px; }
+  .card.appointment-reminder header {
+    background-color: #A700D1;
+    color: white;
+    padding: 15px 0;
+    font-size: 16px; }
+  .card.appointment-reminder .image-box {
+    text-align: right; }
+  .card.appointment-reminder .image-container {
+    margin-top: -35px;
     display: inline-block;
-    vertical-align: top;
-    width: 47%;
-    padding: 10px 0; }
-  .card.notification .time i {
-    color: #797F85; }
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 2px solid white; }
+    .card.appointment-reminder .image-container img {
+      display: block;
+      width: 100%; }
+  .card.appointment-reminder .info-box {
+    margin-top: -30px; }
+  .card.appointment-reminder .row {
+    padding: 2px 0; }
+    .card.appointment-reminder .row i,
+    .card.appointment-reminder .row .text {
+      display: inline-block;
+      vertical-align: middle; }
+    .card.appointment-reminder .row i {
+      width: 20px;
+      margin-right: 5px;
+      font-size: 16px;
+      text-align: right;
+      color: #797F85; }
+  .card.appointment-reminder .timer-media {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 10px 10px 0; }
+    .card.appointment-reminder .timer-media .timer {
+      margin-right: 3px;
+      color: #00949C; }
+    .card.appointment-reminder .timer-media i {
+      color: #797F85; }

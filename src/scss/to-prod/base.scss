@@ -13,6 +13,7 @@ $light-gray-4: #D9DCDE;
 $selected-green: #00C1C4;
 $selected-green-dark-1: #00949C;
 $site-purple: #A700D1;
+$site-purple-light-1: #C94FE8;
 
 $one-px: 0.06250rem;
 @function px($pixels) {
@@ -36,6 +37,12 @@ body {
 
 .site-purple-text {
   color: $site-purple;
+}
+.site-purple-light-text {
+  color: $site-purple-light-1;
+}
+.site-green-text {
+  color: $selected-green;
 }
 
 .shadow {
@@ -287,8 +294,9 @@ nav.top {
 .card {
   position: relative;
   background-color: white;
-  margin: 10px 0;
+  margin: 10px auto;
   min-height: 40px;
+  //width: 98%;
 
   &:first-of-type {
     margin-top: 0;

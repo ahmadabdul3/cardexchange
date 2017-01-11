@@ -1,0 +1,68 @@
+.card.appointment-reminder {
+  padding-bottom: 15px;
+
+  header {
+    background-color: $site-purple;
+    color: white;
+    padding: 15px 0;
+    font-size: 16px;
+  }
+
+  .image-box {
+    text-align: right;
+  }
+
+  .image-container {
+    margin-top: -35px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 2px solid white;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .info-box {
+    margin-top: -30px;
+  }
+
+  .row {
+    padding: 2px 0;
+
+    i,
+    .text {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    i {
+      width: 20px;
+      margin-right: 5px;
+      font-size: 16px;
+      text-align: right;
+      color: $text-color-light-2;
+    }
+  }
+
+  .timer-media {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0 10px 10px 0;
+
+    .timer {
+      margin-right: 3px;
+      color: $selected-green-dark-1
+    }
+
+    i {
+      color: $text-color-light-2;
+    }
+  }
+}
