@@ -35,12 +35,22 @@ body {
   font-weight: 100;
 }
 
+.gen-abs-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .site-purple-text {
   color: $site-purple;
 }
+
 .site-purple-light-text {
   color: $site-purple-light-1;
 }
+
 .site-green-text {
   color: $selected-green;
 }
@@ -296,7 +306,7 @@ nav.top {
   background-color: white;
   margin: 10px auto;
   min-height: 40px;
-  //width: 98%;
+  width: 95%;
 
   &:first-of-type {
     margin-top: 0;
@@ -308,4 +318,10 @@ nav.top {
 
 .nav-size-space {
   height: 45px;
+}
+
+.abs-img {
+  @extend .gen-abs-content;
+  height: auto;
+  z-index: -1;
 }

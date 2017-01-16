@@ -1,27 +1,25 @@
 .card.greeting {
   text-align: center;
-  background-color: transparent;
+  padding: 10px 0;
 
-  .image-box,
-  .text-box {
-    padding: 10px 0;
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  .image-box {
-    width: 30%;
-
-    img {
-      display: inline-block;
-      width: 60px;
-      border-radius: 100%;
-    }
-  }
-
-  .text-box {
-    width: 65%;
-    text-align: left;
+  label {
     font-size: 25px;
   }
 }
+
+
+/*
+
+<div class='card greeting'>
+  <div class='shadow'></div>
+  <div class='content hrz-img-txt-combo'>
+    <div class='image-container'>
+      <img src='https://www.gallereplay.com/profiles/corwin/picture.jpg'/>
+    </div>
+    <label>
+      Hi <span class='site-purple-text'>Steven</span>
+    </label>
+  </div>
+</div>
+
+*/

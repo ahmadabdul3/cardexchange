@@ -1,0 +1,12 @@
+.image-container {
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

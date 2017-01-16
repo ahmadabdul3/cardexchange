@@ -1,0 +1,39 @@
+.section-title {
+  color: white;
+  position: relative;
+  margin-bottom: -5px;
+  display: flex;
+  align-items: center;
+
+  .content {
+    flex-shrink: 0;
+    width: 95%;
+    background-color: $site-purple;
+  }
+
+  h3 {
+    padding: 7px 0;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .horz-bar {
+    flex-grow: 1;
+    height: 1px;
+    background-color: $site-purple;
+  }
+}
+
+/*
+
+<div class='section-title'>
+  <div class='horz-bar'></div>
+  <div class='content'>
+    <h3>
+      Your next appointment
+    </h3>
+  </div>
+  <div class='horz-bar'></div>
+</div>
+
+*/

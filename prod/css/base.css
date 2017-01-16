@@ -10,6 +10,13 @@ body {
   color: #42464A;
   font-weight: 100; }
 
+.gen-abs-content, .abs-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 .site-purple-text {
   color: #A700D1; }
 
@@ -186,7 +193,8 @@ nav.top {
   position: relative;
   background-color: white;
   margin: 10px auto;
-  min-height: 40px; }
+  min-height: 40px;
+  width: 95%; }
   .card:first-of-type {
     margin-top: 0; }
   .card:last-of-type {
@@ -194,3 +202,7 @@ nav.top {
 
 .nav-size-space {
   height: 45px; }
+
+.abs-img {
+  height: auto;
+  z-index: -1; }

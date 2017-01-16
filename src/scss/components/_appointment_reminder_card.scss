@@ -1,68 +1,88 @@
 .card.appointment-reminder {
-  padding-bottom: 15px;
+  h5 {
+    padding: 5px 0;
+  }
 
   header {
-    background-color: $site-purple;
-    color: white;
-    padding: 15px 0;
-    font-size: 16px;
-  }
+    padding: 10px 0;
+    border-bottom: 1px solid $light-gray-4;
+    text-align: center;
 
-  .image-box {
-    text-align: right;
-  }
+    .image-container {
+      width: 50px;
+      height: 50px;
+    }
 
-  .image-container {
-    margin-top: -35px;
-    display: inline-block;
-    vertical-align: middle;
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    overflow: hidden;
-    border: 2px solid white;
-
-    img {
-      display: block;
-      width: 100%;
+    label {
+      font-size: 25px;
     }
   }
 
-  .info-box {
-    margin-top: -30px;
-  }
+  footer {
+    font-size: 12px;
 
-  .row {
-    padding: 2px 0;
-
-    i,
-    .text {
-      display: inline-block;
-      vertical-align: middle;
+    &.float-bar {
+      height: 30px;
     }
 
-    i {
-      width: 20px;
+    .image-container {
+      width: 12px;
+      height: 12px;
+      overflow: visible;
+      border-radius: 0;
       margin-right: 5px;
-      font-size: 16px;
-      text-align: right;
-      color: $text-color-light-2;
+
+      i {
+        font-size: 14px;
+        float: left;
+      }
     }
   }
 
   .timer-media {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 0 10px 10px 0;
-
-    .timer {
+    label {
       margin-right: 3px;
-      color: $selected-green-dark-1
-    }
-
-    i {
-      color: $text-color-light-2;
     }
   }
 }
+
+
+/*
+
+<div class='card appointment-reminder'>
+  <div class='shadow'></div>
+  <header>
+    <div class='content hrz-txt-img-combo'>
+      <label>
+        Julie Wayne
+      </label>
+      <div class='image-container'>
+        <img src='https://www.ephotozine.com/articles/three-ways-to-use-an-octa-for-your-portraits-11736/images/octa_soft_portrait.jpg'/>
+      </div>
+    </div>
+  </header>
+  <footer class='float-bar'>
+    <div class='content'>
+      <ul>
+        <li class='left'>
+          <div class='hrz-img-txt-combo centered-content'>
+            <div class='image-container'>
+              <i class="fa fa-lg fa-calendar" aria-hidden="true"></i>
+            </div>
+            <label>
+              Mon March 5, 2017 - 3:45 pm
+            </label>
+          </div><div class='v-m-hack'></div>
+        </li>
+        <li class='right'>
+          <div class='timer-media centered-content'>
+            <label class='timer site-green-text'>3h 5m</label>
+            <i class="fa fa-lg fa-video-camera" aria-hidden="true"></i>
+          </div><div class='v-m-hack'></div>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</div><!--appointment-reminder -->
+
+*/

@@ -1,0 +1,23 @@
+.home-page {
+  height: 100%;
+  position: relative;
+
+  .background {
+    @extend .gen-abs-content;
+    z-index: -10;
+    background-color: white;
+  }
+
+  header {
+    height: 50%;
+    position: relative;
+    overflow: hidden;
+
+    .overlay {
+      z-index: 10;
+      opacity: 0.3;
+      background: linear-gradient($site-purple-dark-2, $site-purple-dark-3);
+    }
+  }
+
+}

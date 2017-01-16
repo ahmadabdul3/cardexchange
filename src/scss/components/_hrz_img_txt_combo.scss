@@ -1,0 +1,18 @@
+.hrz-img-txt-combo {
+  > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .image-container {
+    margin-right: 10px;
+  }
+}
+
+.hrz-txt-img-combo {
+  @extend .hrz-img-txt-combo;
+
+  label {
+    margin-right: 10px;
+  }
+}
