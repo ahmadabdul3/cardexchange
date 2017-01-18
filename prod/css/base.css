@@ -103,6 +103,17 @@ ul {
   .content .auto-height {
     height: auto; }
 
+.img-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  display: inline-block;
+  overflow: hidden; }
+
+.img {
+  display: inline-block;
+  width: 100%; }
+
 label, .icon-box {
   display: inline-block;
   vertical-align: middle; }

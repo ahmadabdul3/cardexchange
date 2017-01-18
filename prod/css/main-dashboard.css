@@ -177,13 +177,56 @@
   height: 100%;
   position: relative; }
   .home-page .background {
-    z-index: -10;
+    z-index: -999;
     background-color: white; }
   .home-page header {
     height: 50%;
-    position: relative;
-    overflow: hidden; }
+    position: relative; }
     .home-page header .overlay {
-      z-index: 10;
-      opacity: 0.3;
-      background: linear-gradient(#530069, #370045); }
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -99;
+      opacity: 0.6;
+      background: linear-gradient(#384161, #434c6c); }
+    .home-page header .background-img-box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -100; }
+    .home-page header .background {
+      width: 100%;
+      filter: blur(2px); }
+    .home-page header .col {
+      width: 50%;
+      height: 100%;
+      float: left;
+      text-align: center; }
+    .home-page header .col-content {
+      display: inline-block;
+      vertical-align: middle;
+      border-right: 1px solid white; }
+    .home-page header .user-name {
+      color: white;
+      font-size: 18px;
+      margin-top: 10px; }
+  .home-page .next-appointment {
+    padding: 15px 0;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    text-align: center; }
+    .home-page .next-appointment .title {
+      font-style: italic;
+      text-align: left; }
+    .home-page .next-appointment .therapist-name {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px; }
+    .home-page .next-appointment .img-box {
+      width: 40px;
+      height: 40px;
+      vertical-align: middle; }
