@@ -30,10 +30,12 @@
       width: 100%;
       height: 100%;
       z-index: -100;
+      overflow: hidden;
     }
 
     .background {
       width: 100%;
+      height: auto;
       filter: blur(2px);
     }
 
@@ -42,12 +44,22 @@
       height: 100%;
       float: left;
       text-align: center;
+      position: relative;
+    }
+
+    .col-border {
+      top: 25%;
+      right: 0;
+      left: auto;
+      width: 1px;
+      height: 50%;
+      background: white;
+      opacity: 0.8;
     }
 
     .col-content {
       display: inline-block;
       vertical-align: middle;
-      border-right: 1px solid white;
     }
 
     .user-name {
@@ -58,26 +70,112 @@
   }
 
   .next-appointment {
-    padding: 15px 0;
+    padding: 5px 0;
     background-color: white;
     border-bottom: 1px solid #ddd;
     text-align: center;
+    position: relative;
 
     .title {
       font-style: italic;
       text-align: left;
     }
 
+    .info-items {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .info-item {
+      flex-grow: 1;
+      text-align: center;
+      font-size: 11px;
+      line-height: 11px;
+
+      .text {
+        line-height: 11px;
+      }
+    }
+
     .therapist-name {
       display: inline-block;
       vertical-align: middle;
-      margin-right: 10px;
+      margin-right: 5px;
     }
 
     .img-box {
-      width: 40px;
-      height: 40px;
+      width: 15px;
+      height: 15px;
       vertical-align: middle;
     }
   }
+}
+
+.component-icon {
+  top: 10px;
+  right: 10px;
+  left: auto;
+  width: 10px;
+  height: 10px;
+
+
+  i {
+    color: #aaa;
+    font-size: 12px;
+    transition: color 0.15s ease;
+    float: left;
+  }
+}
+
+.status-update {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.status-update .input {
+  transition: all 0.15s ease;
+  display: block;
+  border: none;
+  width: calc(100% - 50px);
+  height: 20px;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  resize: none;
+  color: $text-color;
+}
+
+.status-update .input:focus {
+  height: 50px;
+  background: white;
+  transition: all 0.15s ease;
+
+  ~ .component-icon i {
+      color: $selected-green;
+      transition: color 0.15s ease;
+  }
+}
+
+::-webkit-input-placeholder {
+   font-style: italic;
+   font-weight: 100;
+}
+:-moz-placeholder {
+   font-style: italic;
+}
+::-moz-placeholder {
+   font-style: italic;
+}
+:-ms-input-placeholder {
+   font-style: italic;
+}
+
+.seperator-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background: $text-color-light-1;
 }
