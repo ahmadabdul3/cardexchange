@@ -27,13 +27,7 @@ body {
   color: #00C1C4; }
 
 .shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 1px 1px 0 black;
-  opacity: 0.5; }
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5); }
 
 .vertical-center {
   display: inline-block;
@@ -151,15 +145,14 @@ label, .icon-box {
 
 nav.std {
   background-color: white;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.4);
   height: 45px;
   position: fixed;
   left: 0;
   width: 100%;
   z-index: 999; }
-  nav.std .shadow {
-    box-shadow: 0 0 10px 0 black;
-    opacity: 0.3;
-    z-index: 998; }
+  nav.std li .category {
+    display: none; }
   nav.std ul li.left-align {
     text-align: left; }
   nav.std ul li.right-align {
@@ -195,6 +188,7 @@ nav.flex.thirds ul li {
     max-width: 100%; }
 
 nav.bot {
+  box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.4);
   bottom: 0; }
 
 nav.top {

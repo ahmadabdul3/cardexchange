@@ -48,11 +48,11 @@
     }
 
     .col-border {
-      top: 25%;
+      top: 30%;
       right: 0;
       left: auto;
       width: 1px;
-      height: 50%;
+      height: 40%;
       background: white;
       opacity: 0.8;
     }
@@ -79,16 +79,18 @@
     .title {
       font-style: italic;
       text-align: left;
+      color: black;
     }
 
     .info-items {
-      margin-top: 10px;
+      margin-top: 12px;
       display: flex;
+      justify-content: space-between;
       align-items: center;
     }
 
     .info-item {
-      flex-grow: 1;
+      // flex-grow: 1;
       text-align: center;
       font-size: 11px;
       line-height: 11px;
@@ -119,6 +121,18 @@
   width: 10px;
   height: 10px;
 
+  &.therapist-image {
+    width: 25px;
+    height: 25px;
+    top: 2px;
+    right: 10px;
+
+    .img-box {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
 
   i {
     color: #aaa;
@@ -129,13 +143,15 @@
 }
 
 .status-update {
+  background: $off-white;
   position: relative;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 10px;
+  // border-bottom: 1px solid #ddd;
+  margin-bottom: 5px;
 }
 
 .status-update .input {
   transition: all 0.15s ease;
+  background-color: transparent;
   display: block;
   border: none;
   width: calc(100% - 50px);
@@ -149,7 +165,6 @@
 
 .status-update .input:focus {
   height: 50px;
-  background: white;
   transition: all 0.15s ease;
 
   ~ .component-icon i {
