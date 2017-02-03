@@ -12,7 +12,11 @@
 .hrz-txt-img-combo {
   @extend .hrz-img-txt-combo;
 
-  label {
+  .image-container {
+    margin-right: 0;
+  }
+
+  .text {
     margin-right: 10px;
   }
 }

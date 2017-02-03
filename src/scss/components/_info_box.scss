@@ -1,0 +1,59 @@
+.info-box {
+  background-color: white;
+}
+
+.therapist-info-box {
+  @extend .info-box;
+
+  + .therapist-info-box {
+    border-top: 1px solid $light-gray-4;
+  }
+}
+
+.therapist-header-info-box {
+  @extend .therapist-info-box;
+
+  .hrz-img-txt-combo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  .text {
+    text-align: right;
+  }
+}
+
+.therapist-about-info-box {
+  @extend .therapist-info-box;
+
+  .title {
+    padding: 10px 0;
+    color: $text-color-light-2;
+    font-style: italic;
+    font-weight: normal;
+    color: $site-green;
+  }
+
+  .body {
+    padding-bottom: 10px;
+    line-height: 20px;
+  }
+}
+
+.review-feedback-info-box {
+  @extend .therapist-about-info-box;
+
+  .title {
+    color: $text-color;
+    padding-top: 10px;
+    padding-bottom: 0;
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  .body {
+    padding: 10px 0;
+  }
+}

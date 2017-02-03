@@ -10,6 +10,19 @@ body {
   color: #42464A;
   font-weight: 100; }
 
+h3 {
+  font-size: 20px; }
+
+.hidden {
+  display: none; }
+
+.section-title {
+  padding: 20px 0;
+  color: #A700D1;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 20px; }
+
 .gen-abs-content, .abs-img {
   position: absolute;
   top: 0;

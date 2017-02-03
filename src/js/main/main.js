@@ -6,10 +6,8 @@ $(function() {
     var selectedPageCategory = $(selectedNavItem).children().first().text();
     $(selectedNavItem).removeClass('selected');
     $(this).addClass('selected');
-    $('.' + selectedPageCategory + '-page').hide();
-    $('.' + category + '-page').show();
+    $('.' + selectedPageCategory + '-page').addClass('hidden');
+    $('.' + category + '-page').removeClass('hidden');
   });
 
 });
-
-console.log('x');

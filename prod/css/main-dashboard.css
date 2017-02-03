@@ -9,38 +9,6 @@
   z-index: 9999;
   opacity: .5; }
 
-.section-title {
-  color: white;
-  position: relative;
-  margin-bottom: -5px;
-  display: flex;
-  align-items: center; }
-  .section-title .content {
-    flex-shrink: 0;
-    width: 95%;
-    background-color: #A700D1; }
-  .section-title h3 {
-    padding: 7px 0;
-    width: 95%;
-    margin: 0 auto; }
-  .section-title .horz-bar {
-    flex-grow: 1;
-    height: 1px;
-    background-color: #A700D1; }
-
-/*
-
-<div class='section-title'>
-  <div class='horz-bar'></div>
-  <div class='content'>
-    <h3>
-      Your next appointment
-    </h3>
-  </div>
-  <div class='horz-bar'></div>
-</div>
-
-*/
 .image-container {
   border-radius: 100%;
   width: 70px;
@@ -58,7 +26,10 @@
 .hrz-img-txt-combo .image-container, .hrz-txt-img-combo .image-container {
   margin-right: 10px; }
 
-.hrz-txt-img-combo label {
+.hrz-txt-img-combo .image-container {
+  margin-right: 0; }
+
+.hrz-txt-img-combo .text {
   margin-right: 10px; }
 
 .float-bar {
@@ -185,9 +156,20 @@
   background-color: white;
   border-bottom: 1px solid #ddd;
   text-align: center;
-  position: relative; }
+  position: relative;
+  display: flex; }
   .calendar-entry:first-of-type {
     border-top: 1px solid #ddd; }
+  .calendar-entry .day {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    padding-left: 5px;
+    font-size: 22px; }
+  .calendar-entry .details {
+    flex-grow: 1; }
   .calendar-entry .component-icon.therapist-image {
     top: 10px; }
   .calendar-entry .title {
@@ -215,6 +197,55 @@
     width: 15px;
     height: 15px;
     vertical-align: middle; }
+
+.info-box, .therapist-info-box, .therapist-header-info-box, .therapist-about-info-box, .review-feedback-info-box {
+  background-color: white; }
+
+.therapist-info-box + .therapist-info-box, .therapist-header-info-box + .therapist-info-box, .therapist-about-info-box + .therapist-info-box, .review-feedback-info-box + .therapist-info-box, .therapist-info-box + .therapist-header-info-box, .therapist-header-info-box + .therapist-header-info-box, .therapist-about-info-box + .therapist-header-info-box, .review-feedback-info-box + .therapist-header-info-box, .therapist-info-box + .therapist-about-info-box, .therapist-header-info-box + .therapist-about-info-box, .therapist-about-info-box + .therapist-about-info-box, .review-feedback-info-box + .therapist-about-info-box, .therapist-info-box + .review-feedback-info-box, .therapist-header-info-box + .review-feedback-info-box, .therapist-about-info-box + .review-feedback-info-box, .review-feedback-info-box + .review-feedback-info-box {
+  border-top: 1px solid #D9DCDE; }
+
+.therapist-header-info-box .hrz-img-txt-combo, .therapist-header-info-box .hrz-txt-img-combo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0; }
+
+.therapist-header-info-box .text {
+  text-align: right; }
+
+.therapist-about-info-box .title, .review-feedback-info-box .title {
+  padding: 10px 0;
+  color: #797F85;
+  font-style: italic;
+  font-weight: normal;
+  color: #00ACB5; }
+
+.therapist-about-info-box .body, .review-feedback-info-box .body {
+  padding-bottom: 10px;
+  line-height: 20px; }
+
+.review-feedback-info-box .title {
+  color: #42464A;
+  padding-top: 10px;
+  padding-bottom: 0;
+  font-size: 16px;
+  font-weight: 100; }
+
+.review-feedback-info-box .body {
+  padding: 10px 0; }
+
+.rating-stars {
+  padding: 2px 0;
+  display: inline-block; }
+  .rating-stars .star {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle; }
+    .rating-stars .star i {
+      float: left;
+      font-size: 14px;
+      color: #f7d100; }
 
 .home-page {
   height: 100%;

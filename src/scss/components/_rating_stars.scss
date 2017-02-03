@@ -1,0 +1,17 @@
+.rating-stars {
+  padding: 2px 0;
+  display: inline-block;
+  
+  .star {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    vertical-align: middle;
+
+    i {
+      float: left;
+      font-size: 14px;
+      color: $yellow;
+    }
+  }
+}
