@@ -163,11 +163,15 @@
   .calendar-entry .day {
     flex-shrink: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 30px;
     padding-left: 5px;
     font-size: 22px; }
+    .calendar-entry .day .text {
+      font-size: 12px;
+      margin-top: 3px; }
   .calendar-entry .details {
     flex-grow: 1; }
   .calendar-entry .component-icon.therapist-image {
@@ -198,11 +202,31 @@
     height: 15px;
     vertical-align: middle; }
 
-.info-box, .therapist-info-box, .therapist-header-info-box, .therapist-about-info-box, .review-feedback-info-box {
+.info-box, .therapist-info-box, .therapist-header-info-box, .therapist-about-info-box, .review-feedback-info-box, .therapist-actions-info-box {
   background-color: white; }
+  .info-box + .info-box, .therapist-info-box + .info-box, .therapist-header-info-box + .info-box, .therapist-about-info-box + .info-box, .review-feedback-info-box + .info-box, .therapist-actions-info-box + .info-box, .info-box + .therapist-info-box, .therapist-info-box + .therapist-info-box, .therapist-header-info-box + .therapist-info-box, .therapist-about-info-box + .therapist-info-box, .review-feedback-info-box + .therapist-info-box, .therapist-actions-info-box + .therapist-info-box, .info-box + .therapist-header-info-box, .therapist-info-box + .therapist-header-info-box, .therapist-header-info-box + .therapist-header-info-box, .therapist-about-info-box + .therapist-header-info-box, .review-feedback-info-box + .therapist-header-info-box, .therapist-actions-info-box + .therapist-header-info-box, .info-box + .therapist-about-info-box, .therapist-info-box + .therapist-about-info-box, .therapist-header-info-box + .therapist-about-info-box, .therapist-about-info-box + .therapist-about-info-box, .review-feedback-info-box + .therapist-about-info-box, .therapist-actions-info-box + .therapist-about-info-box, .info-box + .review-feedback-info-box, .therapist-info-box + .review-feedback-info-box, .therapist-header-info-box + .review-feedback-info-box, .therapist-about-info-box + .review-feedback-info-box, .review-feedback-info-box + .review-feedback-info-box, .therapist-actions-info-box + .review-feedback-info-box, .info-box + .therapist-actions-info-box, .therapist-info-box + .therapist-actions-info-box, .therapist-header-info-box + .therapist-actions-info-box, .therapist-about-info-box + .therapist-actions-info-box, .review-feedback-info-box + .therapist-actions-info-box, .therapist-actions-info-box + .therapist-actions-info-box {
+    border-top: 1px solid #D9DCDE; }
 
-.therapist-info-box + .therapist-info-box, .therapist-header-info-box + .therapist-info-box, .therapist-about-info-box + .therapist-info-box, .review-feedback-info-box + .therapist-info-box, .therapist-info-box + .therapist-header-info-box, .therapist-header-info-box + .therapist-header-info-box, .therapist-about-info-box + .therapist-header-info-box, .review-feedback-info-box + .therapist-header-info-box, .therapist-info-box + .therapist-about-info-box, .therapist-header-info-box + .therapist-about-info-box, .therapist-about-info-box + .therapist-about-info-box, .review-feedback-info-box + .therapist-about-info-box, .therapist-info-box + .review-feedback-info-box, .therapist-header-info-box + .review-feedback-info-box, .therapist-about-info-box + .review-feedback-info-box, .review-feedback-info-box + .review-feedback-info-box {
-  border-top: 1px solid #D9DCDE; }
+.therapist-actions-info-box {
+  display: flex;
+  padding-top: 0; }
+  .therapist-actions-info-box .action {
+    width: 50%;
+    padding: 10px 0;
+    border-right: 1px solid #D9DCDE;
+    text-align: center; }
+    .therapist-actions-info-box .action:last-of-type {
+      border-right: 0; }
+  .therapist-actions-info-box .image-container {
+    width: 17px;
+    height: 17px;
+    border-radius: 0;
+    margin-right: 3px; }
+  .therapist-actions-info-box i {
+    font-size: 14px;
+    float: left;
+    margin-top: 2px;
+    margin-left: 2px; }
 
 .therapist-header-info-box .hrz-img-txt-combo, .therapist-header-info-box .hrz-txt-img-combo {
   display: flex;
@@ -214,7 +238,7 @@
   text-align: right; }
 
 .therapist-about-info-box .title, .review-feedback-info-box .title {
-  padding: 10px 0;
+  padding: 15px 0;
   color: #797F85;
   font-style: italic;
   color: #00ACB5; }
@@ -225,7 +249,7 @@
 
 .review-feedback-info-box .title {
   color: #42464A;
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 0;
   font-size: 16px;
   font-weight: 100; }
